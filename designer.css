@@ -1,0 +1,94 @@
+.branding {
+    height: 1em;
+    right: 0;
+    top: 0;
+    position:absolute;
+    margin:5;
+    padding:5;
+    background-color:#28794C;
+    border:1px solid #4B956B;
+    opacity:0.5;
+    overflow:none;
+    visibility:visible;
+    color:#76B190;
+    fontSize:8pt;
+    z-index:100;
+}
+
+.mainmenu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    margin: 5;
+    padding: 5;
+    opacity: 0.5;
+    background-color:#28794C;
+    border:1px solid #4B956B;
+    overflow:none;
+    visibility:visible;
+    color:#76B190;
+    fontSize:8pt;
+    z-index: 100;
+}
+
+.mainmenu button {
+    width: 100%;
+    text-align: center;
+}
+
+.logbook {
+    position:absolute;
+    right:0;
+    bottom:0;
+    margin:5;
+    padding:5;
+    width:200;
+    height:400;
+    background-color:#28794C;
+    border:1px solid #4B956B;
+    opacity:0.5;
+    overflow:none;
+    visibility:visible;
+    color:#76B190;
+    fontSize:8pt;
+	z-index:5;
+}
+
+.innerlogbook {
+    fontSize:8pt;
+    color:#76B190;
+    margin: 0px;
+    padding: 0px;
+    overflow:auto;
+    width: 198px;
+    height: 350px;
+}
+
+.logbookheader {
+    width: 100%;
+    fontSize:8pt;
+    text-align: center;
+}
+
+.logentry {
+    font-size:9pt;
+    width: 170px;;
+    float: left;
+    overflow:auto;
+    visibility:visible;
+	
+}
+
+.activelogentry {
+    background-color: #00411C;
+    color: #76B190;
+}
+
+.selectedEntry {
+    border: 1px solid #4B956B;
+}
+
+form {
+	font-size: 9pt;
+}

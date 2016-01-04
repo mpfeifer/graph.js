@@ -1,11 +1,60 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="designer.css" />
+    <style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map { height: 320px; width: 320px; position: absolute; left: 5px; bottom: 5px; z-index:150;}
+    </style>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <title></title>
-  <link rel="stylesheet" type="text/css" href="graph.css" />
-</head>
-<body>
-  <script src="graph.js"></script>
-  <script src="designer.js"></script>
-</body>
+  <body>
+	<div class="branding" id="branding">Graph Designer 1.0</div>
+
+	<div class="mainmenu" id="mainmenu">
+      <form>
+		<fieldset>
+		  <input type="radio" id="nodemode" name="mode" value="nodemode" checked="checked"><label for="nodemode">Node/Edge Modus</label></input><br/>
+		  <input type="radio" id="linemode" name="mode" value="linemode"><label for="linemode">Linienmodus</label></input><br/>
+		  <label for="autoedge">
+			<input type="checkbox" name="autoedge" value="autoedge" id="autoedge"></input>
+			Autom. Kanten
+		  </label><br/>
+
+		  <label for="clearselection">
+			<input type="checkbox" name="clearselection" value="clearselection" id="clearselection"></input>
+			Ausw. nach Aktion löschen
+		  </label><br/>
+
+		  <label for="logbookChkbx">
+			<input type="checkbox" name="logbookChkbx" value="logbookChkbx" id="logbookChkbx" checked="checked"></input>
+			Logbook anzeigen
+		  </label><br/>
+</fieldset>
+		<button type="button" id="deleteselection">Knoten löschen</button>
+		<button type="button" id="addedge">Kante einfügen</button>      
+		<button type="button" id="complete">Selektion verbinden</button>
+		<button type="button" id="invertselection">Aus. Invertieren</button>
+		<button type="button" id="selectall">Alles Auswählen</button>
+		<button type="button" id="deleteedges">Kanten in Auswahl löschen</button>
+		<button type="button" id="undobtn">Rückgängig</button>
+		<button type="button" id="randnodes">Zufällige Knoten</button>
+		<button type="button" id="triangulate">Triangulierung</button>
+		<button type="button" id="grid">Gitter einfügen</button>		
+      </form>
+	</div>
+
+	<div id="logbook" class="logbook">
+	  <p class="logbookheader">Logbook</p>
+	  <div id="innerlogbook" class="innerlogbook"></div>
+	</div>
+
+	<div id="map"></div>
+
+	<script src="graph.js"></script>
+	<script src="designer2.js"></script>
+  </body>
 </html>
